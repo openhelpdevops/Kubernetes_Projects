@@ -1,6 +1,6 @@
 # HashiCorp Vault HA on Kubernetes
 
-> **IPA TLS revision:** This edition uses a FreeIPA-issued certificate whose only DNS SAN is `vault.openhelp.net`. Internal Kubernetes connections continue to use Kubernetes service names, but explicitly validate the certificate with TLS server name `vault.openhelp.net`. This avoids creating IPA identities for Kubernetes-only DNS names and keeps TLS hostname verification enabled.
+> **IPA TLS revision:** This edition uses a IPA-issued certificate whose only DNS SAN is `vault.openhelp.net`. Internal Kubernetes connections continue to use Kubernetes service names, but explicitly validate the certificate with TLS server name `vault.openhelp.net`. This avoids creating IPA identities for Kubernetes-only DNS names and keeps TLS hostname verification enabled.
 
 > **Environment:** Kubernetes `v1.29.x`, nodes `kube2`–`kube7`, Ceph RBD StorageClass `rook-ceph-block`, MetalLB, FreeIPA CA, kube-prometheus-stack release `monitoring`, Grafana, and NGINX available for a later phase.
 >
